@@ -20,9 +20,12 @@
 
     <main>
         <fieldset>
-            <select></select>
+            <legend>Select a Username</legend>
+            <select id="selectUsernames">
+                <option hidden element> Select</option>
+            </select>
         </fieldset>
-
+            <br>
         <form>
             <label for="userID">Department:</label>
             <input id="userID" type="number" name="userID"><br><br>
@@ -31,12 +34,14 @@
             <label for="description">Description:</label>
             <input id="description" type="text" name="description"><br><br>
             <label for="deadline">Deadline:</label>
-            <input id="deadline" type="number" name="deadline"><br><br>
+            <input id="deadline" type="date" name="deadline"><br><br>
             <label for="priority">Priority:</label>
             <input id="priority" type="text" name="priority"><br><br>
         </form>
     </main>
 
+
+    <script src="new-to-do.js"></script>
 </body>
 
 </html>
