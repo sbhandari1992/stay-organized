@@ -1,16 +1,39 @@
 body{
     background-color: rgb(202, 224, 250);
+    font-family: sans-serif;
 }
 nav{
     background-color: beige;
-    width: 1350px;
-    height: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 fieldset{
     width: 500px;
 }
 select{
     width: 500px;
+}
+div{
+    margin-left: 500px;
+}
+.displayData{
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    
+}
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
 }
