@@ -27,17 +27,26 @@
 
         <fieldset style="margin-left: 400px;">
             <legend>Select a Username</legend>
-            <select></select>
+            <select id="selectUsernames">
+                <option hidden element>Select</option>
+            </select>
         </fieldset>
 
         <fieldset style="margin-left: 400px;">
-            <legend>Select</legend>
-            <select></select>
+            <legend>Select a Category</legend>
+            <select id="selectCategory">
+                <option hidden element>Select</option>
+            </select>
         </fieldset>
 
         <fieldset style="margin-left: 400px;">
-            <legend>Select</legend>
-            <select></select>
+            <legend>Select a Priority</legend>
+            <select id="priority">
+                <option hidden element> Select</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
         </fieldset>
 
         <!-- <fieldset style="margin-top: 10px; margin-left: 400px;">
@@ -65,6 +74,7 @@
 
     </main>
 
+    <script src="new-to-do.js"></script>
 </body>
 
 </html>
