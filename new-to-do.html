@@ -29,11 +29,12 @@
         </fieldset>
 
         <fieldset style="margin-top: 10px; margin-left: 400px;">
-            <form>
+            <form id="addToDo">
                 <label for="userID">User id:</label>
                 <input id="userID" type="number" name="userID"><br><br>
+                <!-- this needs a proper css style -->
                 <label for="category">Category:</label>
-                <input id="category" type="text" name="category"><br><br>
+                <select name="category" id="category"></select>
                 <label for="description">Description:</label>
                 <input id="description" type="text" name="description"><br><br>
                 <label for="deadline">Deadline:</label>
@@ -50,7 +51,7 @@
             <p>Deadline: 1234</p>
             <p>Priority: High</p>
         </div>
-
+<script src="scripts\server-push.js"></script>
     </main>
 
 </body>
