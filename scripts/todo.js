@@ -9,10 +9,16 @@ let allCategories = 'http://localhost:8083/api/categories'
 fetch(allUserUrl)
 .then(response => response.json())
 .then(data => {
-    data.forEach(ar => {
-        let nameOpt = new Option(ar.name);
-        selectUsernames.appendChild(nameOpt);
-    });
+    // data.forEach(ar => {
+    //     let nameOpt = new Option(ar.name);
+    //     selectUsernames.appendChild(nameOpt);
+    // });
+    for (let i = 0; i < data.length; i++) {
+        let nameOpts = document.createElement('option');
+        nameOpts.textContent = data[i].name;
+        nameOpts.value = data[i].name;
+        selectUsernames.appendChild(nameOpts);
+    }
 
     selectUsernames.onchange = getUserAndDisplayToDoList;
 
