@@ -25,52 +25,56 @@
         
         <h2 style="margin-left: 615px;">To Do List</h2>
 
-        <fieldset style="margin-left: 400px;">
-            <legend>Select a Username</legend>
-            <select id="selectUsernames">
-                <option hidden element>Select</option>
-            </select>
-        </fieldset>
+        
 
-        <fieldset style="margin-left: 400px;">
-            <legend>Select a Category</legend>
-            <select id="selectCategory">
-                <option hidden element>Select</option>
-            </select>
-        </fieldset>
-
-        <fieldset style="margin-left: 400px;">
-            <legend>Select a Priority</legend>
-            <select id="priority">
-                <option hidden element> Select</option>
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
-                <option value="low">Low</option>
-            </select>
-        </fieldset>
-
-        <!-- <fieldset style="margin-top: 10px; margin-left: 400px;">
-            <form>
-                <label for="userID">User id:</label>
+        <fieldset style="margin-top: 10px; margin-left: 400px;">
+            <form id="newToDoForm">
+                <fieldset style="margin-left: 400px;">
+                    <legend>Select a Username</legend>
+                    <select id="selectUsernames" name="userid">
+                        <option hidden element>Select</option>
+                    </select>
+                </fieldset>
+        
+                <fieldset style="margin-left: 400px;">
+                    <legend>Select a Category</legend>
+                    <select id="selectCategory" name="category">
+                        <option hidden element>Select</option>
+                    </select>
+                </fieldset>
+        
+                <fieldset style="margin-left: 400px;">
+                    <legend>Select a Priority</legend>
+                    <select id="priority" name="priority">
+                        <option hidden element> Select</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </fieldset>
+                <!-- <label for="userID">User id:</label>
                 <input id="userID" type="number" name="userID"><br><br>
                 <label for="category">Category:</label>
-                <input id="category" type="text" name="category"><br><br>
+                <input id="category" type="text" name="category"><br><br> -->
                 <label for="description">Description:</label>
                 <input id="description" type="text" name="description"><br><br>
                 <label for="deadline">Deadline:</label>
                 <input id="deadline" type="date" name="deadline"><br><br>
-                <label for="priority">Priority:</label>
-                <input id="priority" type="text" name="priority"><br><br>
-            </form>
-        </fieldset> -->
+                <!-- <label for="priority">Priority:</label>
+                <input id="priority" type="text" name="priority"><br><br> -->
 
+                <input id="addMe"  type="submit" name="addMe" value=" Submit">
+
+            </form>
+        </fieldset>
+<!-- 
         <div class="displayData">
             <p>userID: 123244</p>
             <p>Category: Computer Science</p>
             <p>Description: College Course</p>
             <p>Deadline: 1234</p>
             <p>Priority: High</p>
-        </div>
+        </div> -->
 
     </main>
 
