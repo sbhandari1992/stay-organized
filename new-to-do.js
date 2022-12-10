@@ -8,6 +8,7 @@ function displayUsernames() {
             for (let i = 0; i < data.length; i++) {
                 let nameOpts = document.createElement('option');
                 nameOpts.textContent = data[i].username;
+                nameOpts.value = data[i].id;
                 nameOpts.value = data[i].id; 
                 select.appendChild(nameOpts);
             }
@@ -20,9 +21,11 @@ function displayCategories() {
     fetch('http://localhost:8083/api/categories')
         .then((response) => response.json())
         .then(data => {
+            console.log(data);
             // console.log(data);
             for (let i = 0; i < data.length; i++) {
                 let catOpts = new Option(data[i].name);
+                catOpts.value = data[i].userid;
                 catOpts.value = data[i].name;
                 selectCat.appendChild(catOpts);
             }
@@ -31,12 +34,13 @@ function displayCategories() {
 displayCategories();
 
 
+
 let newToDoForm = document.getElementById('newToDoForm');
 console.log(newToDoForm);
 
 let  allUserUrl = 'http://localhost:8083/api/users';
 let allToDoUrl = 'http://localhost:8083/api/todos';
-let toDoUrlByID = "http://localhost:8083/api/todos/byuser/";
+// let toDoUrlByID = "http://localhost:8083/api/todos/byuser/";
 
 newToDoForm.addEventListener('submit', getAndSendData);
 
@@ -56,7 +60,7 @@ function postData() {
             method: "POST",
             body: JSON.stringify(formJSON),
             headers:{"Content-type": "application/json; charset=UTF-8"}
-        
+
         })
         .then(response => response.json())
         .then(data =>{
@@ -68,5 +72,3 @@ function postData() {
             'Unexpected Error';
         })
 }
-
-
