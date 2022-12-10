@@ -1,3 +1,4 @@
+
 let select = document.getElementById('selectUsernames')
 function displayUsernames() {
     fetch('http://localhost:8083/api/users')
