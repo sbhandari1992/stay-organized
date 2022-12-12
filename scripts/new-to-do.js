@@ -8,8 +8,7 @@ function displayUsernames() {
             for (let i = 0; i < data.length; i++) {
                 let nameOpts = document.createElement('option');
                 nameOpts.textContent = data[i].username;
-                nameOpts.value = data[i].id;
-                nameOpts.value = data[i].id; 
+
                 select.appendChild(nameOpts);
             }
         })
@@ -25,7 +24,6 @@ function displayCategories() {
             // console.log(data);
             for (let i = 0; i < data.length; i++) {
                 let catOpts = new Option(data[i].name);
-                catOpts.value = data[i].userid;
                 catOpts.value = data[i].name;
                 selectCat.appendChild(catOpts);
             }

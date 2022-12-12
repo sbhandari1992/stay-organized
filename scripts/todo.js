@@ -1,7 +1,7 @@
 let  selectUsernames = document.getElementById('selectUsernames');
 let displayData = document.getElementById('displayData');
 
-let  allUserUrl = 'http://localhost:8083/api/users';
+let allUserUrl = 'http://localhost:8083/api/users';
 let allToDosUrl = 'http://localhost:8083/api/todos';
 let allCategories = 'http://localhost:8083/api/categories'
 

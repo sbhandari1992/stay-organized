@@ -9,29 +9,41 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Main Page</a></li>
-                <li><a href="to-do.html">To Do</a></li>
-                <li><a href="new-to-do.html">Add To Do</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="index.html">Stay Organized</a>
+                </div>
+                <input type="checkbox" id="nav-check">
+                <label for="nav-check" class="nav-toggler">
+                    <span></span>
+                </label>
+                <nav class="nav">
 
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="to-do.html">To Do</a></li>
+                        <li><a href="new-to-do.html">Add To Do</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
     <main>
         
         <h2 style="margin-left: 615px;">To Do List</h2>
 
         
-        <fieldset style="margin-left: 400px;">
+        <fieldset style="margin-left: 425px;">
             <legend>Select a Username</legend>
             <select id="selectUsernames">
                 <option hidden element>Select</option>
             </select>
         </fieldset>
 
-        <div id="displayData">
+        <div id="displayData" class="displayData">
             <!-- <p>userID: 123244</p>
             <p>Category: Computer Science</p>
             <p>Description: College Course</p>
