@@ -52,10 +52,10 @@ fetch(allUserUrl)
                         displayData.appendChild(Priority);
 
                         let Completed = document.createElement('p');
-                        // data.completed = true ? Completed.innerHTML = "YES" : Completed.innerHTML = "NO";
+                        data.completed = false ? Completed.innerHTML = "YES" : Completed.innerHTML = "NO"; // don't understand why is working oppositely
                         Completed.innerHTML = `Completed: ${data.completed}`;
                         displayData.appendChild(Completed);
-                        
+
 
                        })
 
