@@ -172,7 +172,7 @@ ul {
 }
 
 fieldset {
-    width: 500px;
+    width: 100px;
 }
 
 select {
@@ -185,7 +185,7 @@ select {
 
 .displayData {
     font-weight: bold;
-    margin-left: 500px;
+    margin-left: 450px;
 }
 
 
